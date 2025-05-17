@@ -1,0 +1,38 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+app/__pycache__/
+app/schemas/__pycache__/
+app/routers/__pycache__/
+app/config/__pycache__/
+app/agents/__pycache__/
+app/agents/agent/tools/__pycache__/
+app/agents/agent/services/__pycache__/
+app/agents/agent/agent/__pycache__/
+
+# Virtual environment
+.venv/
+env/
+
+.env
+
+# Configuración de IDEs
+.vscode/
+.idea/
+
+# Archivos de logs
+*.log
+
+# Archivos de caché y temporales
+*.tmp
+*.swp
+
+# Archivos de configuración del sistema
+.DS_Store
+Thumbs.db
+
+uploaded_files/*
+
+chroma_db/
+
+chat_history.db
