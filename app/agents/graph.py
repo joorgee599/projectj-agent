@@ -12,6 +12,9 @@ from app.schemas.chat_schema import AgentState
 from app.agents.profiles.base import AgentProfile
 from app.agents.profiles.anonymous import anonymous_profile
 from app.agents.profiles.client import client_profile
+from app.agents.profiles.seller import seller_profile
+from app.agents.profiles.inventory import inventory_profile
+from app.agents.profiles.admin import admin_profile
 
 logger = logging.getLogger(__name__)
 
@@ -56,6 +59,9 @@ def build_graph(profile: AgentProfile):
 _GRAPHS = {
     "anonymous": build_graph(anonymous_profile),
     "client": build_graph(client_profile),
+    "seller": build_graph(seller_profile),
+    "inventory": build_graph(inventory_profile),
+    "admin": build_graph(admin_profile),
 }
 
 logger.info(f"Graphs pre-built for profiles: {list(_GRAPHS.keys())}")
